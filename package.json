@@ -1,5 +1,5 @@
 {
-  "name": "anakin-sale-module",
+  "name": "chai-sale-module",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:single-spa:Anakin-sale-module": "ng build Anakin-sale-module --configuration production",
-    "serve:single-spa:Anakin-sale-module": "ng s --project Anakin-sale-module --disable-host-check --port 4311 --live-reload false"
+    "build:single-spa:Chai-sale-module": "ng build Chai-sale-module --configuration production",
+    "serve:single-spa:Chai-sale-module": "ng s --project Chai-sale-module --disable-host-check --port 4311 --live-reload false"
   },
   "private": true,
   "dependencies": {

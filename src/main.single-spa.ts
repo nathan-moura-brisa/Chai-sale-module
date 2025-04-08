@@ -1,8 +1,6 @@
 import { enableProdMode, NgZone } from '@angular/core';
 import { Router, NavigationStart } from '@angular/router';
-
 import { singleSpaAngular } from 'single-spa-angular';
-
 import { AppComponent } from './app/app.component';
 import { appConfig } from './app/app.config';
 import { bootstrapApplication } from '@angular/platform-browser';
@@ -16,6 +14,8 @@ const lifecycles = singleSpaAngular({
     return bootstrapApplication(AppComponent, appConfig);
   },
   template: '<app-root />',
+  Router,
+  NavigationStart,
   NgZone,
 });
 

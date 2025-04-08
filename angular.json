@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Anakin-sale-module": {
+    "Chai-sale-module": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/anakin-sale-module",
+            "outputPath": "dist/chai-sale-module",
             "index": "src/index.html",
             "polyfills": [
               "zone.js"
@@ -35,7 +35,7 @@
             "main": "src/main.single-spa.ts",
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
-              "libraryName": "Anakin-sale-module",
+              "libraryName": "Chai-sale-module",
               "libraryTarget": "umd"
             },
             "deployUrl": "http://localhost:4311/"
@@ -69,10 +69,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Anakin-sale-module:build:production"
+              "buildTarget": "Chai-sale-module:build:production"
             },
             "development": {
-              "buildTarget": "Anakin-sale-module:build:development"
+              "buildTarget": "Chai-sale-module:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Anakin-sale-module:build"
+            "buildTarget": "Chai-sale-module:build"
           }
         },
         "test": {
